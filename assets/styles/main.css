@@ -1,0 +1,26 @@
+.pouring-loader {
+  height: 64px;
+  width: 64px;
+  margin: 15px auto; }
+  .pouring-loader .bg {
+    -webkit-transition: height 0.8s ease-out, width 0.8s ease-out;
+    -moz-transition: height 0.8s ease-out, width 0.8s ease-out;
+    transition: height 0.8s ease-out, width 0.8s ease-out; }
+    .pouring-loader .bg .glyphicon {
+      color: #3BAFDA; }
+  .pouring-loader .fg {
+    -webkit-transition: height 0.8s ease-out, width 0.8s ease-out;
+    -moz-transition: height 0.8s ease-out, width 0.8s ease-out;
+    transition: height 0.8s ease-out, width 0.8s ease-out; }
+
+/* 
+.transparent-first {
+	opacity: 0;
+	@include transition (opacity 0.3s ease-out );
+
+	&.visible {
+		opacity: 1;
+		@include transition (opacity 0.3s ease-out 0.5s );
+	}
+}
+ */

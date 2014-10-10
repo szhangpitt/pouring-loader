@@ -1,0 +1,49 @@
+@import  "_global.scss";
+
+
+.pouring-loader {
+	height: 64px;
+	width: 64px;
+	margin: 15px auto;
+	// position: relative;
+
+	.view-port {
+		// position: absolute; 
+		// left: 0;
+		// top: 0;
+		// bottom: 0;
+		// overflow: hidden;
+		// margin: 0 !important;
+
+		.glyphicon {
+			// margin: 0 !important;
+			// font-size: 128px;
+		}
+	}
+
+	.bg {  
+		@include transition (height 0.8s ease-out, width 0.8s ease-out );
+		.glyphicon {
+			color: $aqua-dark;  
+		}
+	}
+
+	.fg {
+		@include transition (height 0.8s ease-out, width 0.8s ease-out );
+		.glyphicon {
+
+		}
+
+	}
+}
+/* 
+.transparent-first {
+	opacity: 0;
+	@include transition (opacity 0.3s ease-out );
+
+	&.visible {
+		opacity: 1;
+		@include transition (opacity 0.3s ease-out 0.5s );
+	}
+}
+ */

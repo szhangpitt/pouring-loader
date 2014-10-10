@@ -1,0 +1,54 @@
+<!doctype html>
+<html ng-app="tagdemo">
+<head>
+    <title>标签识别演示</title>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/styles/main.css">
+</head>
+
+<body ng-controller="UIController">
+
+    <div class="row">
+        <div class="col-md-6">
+            <div load-progress-icon iconclass="glyphicon glyphicon-picture" progress="{{imageLoadPercentage}}"></div>
+        </div>
+        <div class="col-md-6">
+            <input type="range" min="0" max="100" ng-model="imageLoadPercentage">
+        </div>        
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div load-progress-icon iconclass="glyphicon glyphicon-filter" progress="{{tagLoadPercentage}}" towards="down"></div>
+        </div>
+        <div class="col-md-6">
+            <input type="range" min="0" max="100" ng-model="tagLoadPercentage">
+        </div>        
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+             <div load-progress-icon iconclass="glyphicon glyphicon-globe" progress="{{advLoadPercentage}}" towards="right"></div>
+        </div>
+        <div class="col-md-6">
+            <input type="range" min="0" max="100" ng-model="advLoadPercentage">
+        </div>        
+    </div>
+
+
+    <!-- Bootstrap -->
+    <!--<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>-->
+    <!--<script src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>-->
+    <script src="assets/libs/jquery/jquery.min.js"></script>
+    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+    <script src="assets/libs/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Bootflat's JS files.
+    <script src="https://bootflat.github.io/bootflat/js/icheck.min.js"></script>
+    <script src="https://bootflat.github.io/bootflat/js/jquery.fs.selecter.min.js"></script>
+    <script src="https://bootflat.github.io/bootflat/js/jquery.fs.stepper.min.js"></script>
+-->
+<script src="assets/libs/angular/angular.js"></script>
+<script src="assets/scripts/all.js"></script>
+</body>
+</html>

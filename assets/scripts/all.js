@@ -1,3 +1,5 @@
+console.log('Let me know your thoughts 8-)... szhangpitt.github.io')
+
 var appModule = angular.module('tagdemo', []);
 
 appModule.controller('UIController', ['$scope', function ($scope) {
@@ -15,6 +17,7 @@ appModule.directive('preHtml', [function () {
 		link: function (scope, element, attrs) {
 			console.log(element.html());
 			element.text(element.html());
+			element.css('text-align', 'left');
 		}
 	};
 }])

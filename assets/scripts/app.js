@@ -17,6 +17,7 @@ appModule.directive('preHtml', [function () {
 		link: function (scope, element, attrs) {
 			console.log(element.html());
 			element.text(element.html());
+			element.css('text-align', 'left');
 		}
 	};
 }])
